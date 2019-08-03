@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import AppRouter from "./route";
-
 import Header from "./frontOffice/components/Header/Header";
 import Footer from "./frontOffice/components/Footer/Footer";
 import Home from "./frontOffice/components/Home/Home";
@@ -20,17 +19,19 @@ import Autre from "./frontOffice/components/Autre/Autre";
 import Reclamation from "./frontOffice/components/Reclamation/Reclamation";
 import Agents from "./frontOffice/components/Agents/Agents";
 import ProfilAgent from "./frontOffice/components/ProfilAgent/ProfilAgent";
-
+import AppBack from './backOffice/AppBack'
 import EtudeProjet from "./frontOffice/components/EtudeProjet/EtudeProjet";
-import TopBar from "./backOffice/components/topBar/TopBar";
-import SideBar from "./backOffice/components/SideBar/SideBar";
-import AjouterAnnonce from "./backOffice/components/AjouterAnnonce/AjouterAnnonce";
+// import TopBar from "./backOffice/components/topBar/TopBar";
+// import SideBar from "./backOffice/components/SideBar/SideBar";
+// import AjouterAnnonce from "./backOffice/components/AjouterAnnonce/AjouterAnnonce";
+
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <Header />
         <Route exact path="/" component={Home} />
+         {/* <Route exact path="/admin" component={AppBack} /> */}
         <Route path="/achat" component={AchatComponent} />
         <Route path="/location" component={LocationComponent} />
         <Route path="/contact" component={Contact} />
@@ -48,9 +49,9 @@ class App extends Component {
         <Route path="/agents" component={Agents} />
         <Route path="/profilAgent" component={ProfilAgent} />
         <Footer />
-        <Route path="/chef" component={TopBar} />
+        {/* <Route path="/chef" component={TopBar} />
         < Route path="/cheff" component ={SideBar}/>
-        < Route path="/ajouterAnnonce" component ={AjouterAnnonce} />
+        < Route path="/ajouterAnnonce" component ={AjouterAnnonce} /> */}
       </BrowserRouter>
     );
   }
