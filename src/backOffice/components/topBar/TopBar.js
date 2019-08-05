@@ -15,16 +15,16 @@ class TopBar extends Component {
         {/* Logo icon */}<b>
           {/*You can put here icon as well // <i class="wi wi-sunset"></i> //*/}
           {/* Dark Logo icon */}
-          <img src="../assets/images/logo-icon.png" alt="homepage" className="dark-logo" />
+          <img src={require("../../assets/images/logo-icon.png")} alt="homepage" className="dark-logo" />
           {/* Light Logo icon */}
-          <img src="../assets/images/logo-light-icon.png" alt="homepage" className="light-logo" />
+          <img src={require("../../assets/images/logo-light-icon.png")} alt="homepage" className="light-logo" />
         </b>
         {/*End Logo icon */}
         {/* Logo text */}<span>
           {/* dark Logo text */}
-          <img src="../assets/images/logo-text.png" alt="homepage" className="dark-logo" />
+          <img src={require("../../assets/images/logo-text.png")} alt="homepage" className="dark-logo" />
           {/* Light Logo text */}    
-          <img src="../assets/images/logo-light-text.png" className="light-logo" alt="homepage" /></span> </a>
+          <img src={require("../../assets/images/logo-light-text.png")} className="light-logo" alt="homepage" /></span> </a>
     </div>
     {/* ============================================================== */}
     {/* End Logo */}
@@ -118,25 +118,25 @@ class TopBar extends Component {
                 <div className="message-center">
                   {/* Message */}
                   <a href="#">
-                    <div className="user-img"> <img src="../assets/images/users/1.jpg" alt="user" className="img-circle" /> <span className="profile-status online pull-right" /> </div>
+                    <div className="user-img"> <img src={require("../../assets/images/users/1.jpg" )}alt="user" className="img-circle" /> <span className="profile-status online pull-right" /> </div>
                     <div className="mail-contnet">
                       <h5>Pavan kumar</h5> <span className="mail-desc">Just see the my admin!</span> <span className="time">9:30 AM</span> </div>
                   </a>
                   {/* Message */}
                   <a href="#">
-                    <div className="user-img"> <img src="../assets/images/users/2.jpg" alt="user" className="img-circle" /> <span className="profile-status busy pull-right" /> </div>
+                    <div className="user-img"> <img src={require("../../assets/images/users/2.jpg" )}alt="user" className="img-circle" /> <span className="profile-status busy pull-right" /> </div>
                     <div className="mail-contnet">
                       <h5>Sonu Nigam</h5> <span className="mail-desc">I've sung a song! See you at</span> <span className="time">9:10 AM</span> </div>
                   </a>
                   {/* Message */}
                   <a href="#">
-                    <div className="user-img"> <img src="../assets/images/users/3.jpg" alt="user" className="img-circle" /> <span className="profile-status away pull-right" /> </div>
+                    <div className="user-img"> <img src={require("../../assets/images/users/3.jpg" )}alt="user" className="img-circle" /> <span className="profile-status away pull-right" /> </div>
                     <div className="mail-contnet">
                       <h5>Arijit Sinh</h5> <span className="mail-desc">I am a singer!</span> <span className="time">9:08 AM</span> </div>
                   </a>
                   {/* Message */}
                   <a href="#">
-                    <div className="user-img"> <img src="../assets/images/users/4.jpg" alt="user" className="img-circle" /> <span className="profile-status offline pull-right" /> </div>
+                    <div className="user-img"> <img src={require("../../assets/images/users/4.jpg")} alt="user" className="img-circle" /> <span className="profile-status offline pull-right" /> </div>
                     <div className="mail-contnet">
                       <h5>Pavan kumar</h5> <span className="mail-desc">Just see the my admin!</span> <span className="time">9:02 AM</span> </div>
                   </a>
@@ -163,13 +163,13 @@ class TopBar extends Component {
                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                   <div className="carousel-inner" role="listbox">
                     <div className="carousel-item active">
-                      <div className="container"> <img className="d-block img-fluid" src="../assets/images/big/img1.jpg" alt="First slide" /></div>
+                      <div className="container"> <img className="d-block img-fluid" src={require("../../assets/images/big/img1.jpg")} alt="First slide" /></div>
                     </div>
                     <div className="carousel-item">
-                      <div className="container"><img className="d-block img-fluid" src="../assets/images/big/img2.jpg" alt="Second slide" /></div>
+                      <div className="container"><img className="d-block img-fluid" src={require("../../assets/images/big/img2.jpg")} alt="Second slide" /></div>
                     </div>
                     <div className="carousel-item">
-                      <div className="container"><img className="d-block img-fluid" src="../assets/images/big/img3.jpg" alt="Third slide" /></div>
+                      <div className="container"><img className="d-block img-fluid" src={require("../../assets/images/big/img3.jpg")} alt="Third slide" /></div>
                     </div>
                   </div>
                   <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span className="carousel-control-prev-icon" aria-hidden="true" /> <span className="sr-only">Previous</span> </a>
@@ -258,12 +258,12 @@ class TopBar extends Component {
         {/* Profile */}
         {/* ============================================================== */}
         <li className="nav-item dropdown u-pro">
-          <a className="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" className /> <span className="hidden-md-down">Mark Sanders &nbsp;<i className="fa fa-angle-down" /></span> </a>
+          <a className="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src={require("../../assets/images/users/1.jpg")} alt="user" className /> <span className="hidden-md-down">Mark Sanders &nbsp;<i className="fa fa-angle-down" /></span> </a>
           <div className="dropdown-menu dropdown-menu-right animated flipInY">
             <ul className="dropdown-user">
               <li>
                 <div className="dw-user-box">
-                  <div className="u-img"><img src="../assets/images/users/1.jpg" alt="user" /></div>
+                  <div className="u-img"><img src={require("../../assets/images/users/1.jpg" )}alt="user" /></div>
                   <div className="u-text">
                     <h4>Steave Jobs</h4>
                     <p className="text-muted">varun@gmail.com</p><a href="pages-profile.html" className="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
